@@ -37,3 +37,15 @@ arr.traverse()
 
 print("Delete duplicated num", arr.removeDupes())
 arr.traverse()
+
+print("Array ordenado mayor a menor:")
+maxSize2 = 10
+arr2 = Array.Array(maxSize2)
+
+n = len(arr)-1
+while n > 0:
+    p = arr.getMaxNum()
+    arr2.insert(p)
+    arr.delete(p)
+    n = n - 1
+arr2.traverse()
